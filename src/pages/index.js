@@ -4,6 +4,8 @@
 import styles from '@/styles/Home.module.css'
 import Profile from "./components/profile";
 import MyComp from "./qcomps/firstcomp";
+import Bio from "./qcomps/bios";
+import TodoList from "./qcomps/todos";
 //import Profile from './qcomps/profile_mistake.js'
 
 export default function Home() {
@@ -11,7 +13,9 @@ export default function Home() {
         <div className={styles.main}>
             {/*<Profile/>*/}
             {/*<Profile/>*/}
-            <MyComp/>
+            {/*<MyComp/>*/}
+            {/*<Bio/>*/}
+            <TodoList/>
         </div>
     )
 }
