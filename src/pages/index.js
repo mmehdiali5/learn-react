@@ -2,11 +2,12 @@
 // import Image from 'next/image'
 // import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
-import Profile from "./components/profile";
+//import Profile from "./components/profile";
 import MyComp from "./qcomps/firstcomp";
 import Bio from "./qcomps/bios";
 import TodoList from "./qcomps/todos";
 //import Profile from './qcomps/profile_mistake.js'
+import Profile from './components/profile_props.js'
 
 export default function Home() {
     return (
@@ -15,7 +16,8 @@ export default function Home() {
             {/*<Profile/>*/}
             {/*<MyComp/>*/}
             {/*<Bio/>*/}
-            <TodoList/>
+            {/*<TodoList/>*/}
+            <Profile/>
         </div>
     )
 }
