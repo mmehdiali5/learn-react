@@ -13,6 +13,7 @@ import Holder from "./components/square";
 //import PackingList from "./components/props_item";
 import PackingList from "./qcomps/props_item";
 import List from "./qcomps/list_keys_id";
+import RecipeList from "./qcomps/recipes";
 
 export default function Home() {
     return (
@@ -26,7 +27,8 @@ export default function Home() {
             {/*<Gallery/>*/}
             {/*<Holder/>*/}
             {/*<PackingList/>*/}
-            <List/>
+            {/*<List/>*/}
+            <RecipeList/>
         </div>
     )
 }
