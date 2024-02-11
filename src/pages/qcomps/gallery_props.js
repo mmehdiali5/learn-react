@@ -62,7 +62,7 @@ export default function Gallery() {
                 AwardDesc={"(Miyake Prize for geochemistry, Tanaka Prize)"}
                 Discovered={"a method for measuring carbon dioxide in seawater"}
             />
-           
+
         </div>
     );
 }
