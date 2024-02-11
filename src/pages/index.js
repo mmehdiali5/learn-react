@@ -12,6 +12,7 @@ import Gallery from "./qcomps/gallery_props";
 import Holder from "./components/square";
 //import PackingList from "./components/props_item";
 import PackingList from "./qcomps/props_item";
+import List from "./qcomps/list_keys_id";
 
 export default function Home() {
     return (
@@ -24,7 +25,8 @@ export default function Home() {
             {/*<Profile/>*/}
             {/*<Gallery/>*/}
             {/*<Holder/>*/}
-            <PackingList/>
+            {/*<PackingList/>*/}
+            <List/>
         </div>
     )
 }
