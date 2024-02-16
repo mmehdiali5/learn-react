@@ -8,12 +8,15 @@ import Bio from "./qcomps/bios";
 import TodoList from "./qcomps/todos";
 //import Profile from './qcomps/profile_mistake.js'
 import Profile from './components/profile_props.js'
-import Gallery from "./qcomps/gallery_props";
+//import Gallery from "./qcomps/gallery_props";
 import Holder from "./components/square";
 //import PackingList from "./components/props_item";
 import PackingList from "./qcomps/props_item";
 import List from "./qcomps/list_keys_id";
 import RecipeList from "./qcomps/recipes";
+import Gallery from "./qcomps/state";
+//import Gallery from "./components/state";
+//import Gallery from "./components/whyState";
 
 export default function Home() {
     return (
@@ -28,7 +31,9 @@ export default function Home() {
             {/*<Holder/>*/}
             {/*<PackingList/>*/}
             {/*<List/>*/}
-            <RecipeList/>
+            {/*<RecipeList/>*/}
+            {/*<Gallery/>*/}
+            <Gallery/>
         </div>
     )
 }
