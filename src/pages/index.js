@@ -15,6 +15,11 @@ import PackingList from "./qcomps/props_item";
 import List from "./qcomps/list_keys_id";
 import RecipeList from "./qcomps/recipes";
 import Gallery from "./qcomps/state";
+import PersonData from "./components/stateObj";
+//import Form from "./qcomps/stuckForm";
+import FeedbackForm from "./qcomps/thankYouCrash";
+import Counter from "./components/snapshot";
+import Form from "./components/snapshot2";
 //import Gallery from "./components/state";
 //import Gallery from "./components/whyState";
 
@@ -33,7 +38,12 @@ export default function Home() {
             {/*<List/>*/}
             {/*<RecipeList/>*/}
             {/*<Gallery/>*/}
-            <Gallery/>
+            {/*<Gallery/>*/}
+            {/*<PersonData/>*/}
+            {/*<Form/>*/}
+            {/*<FeedbackForm/>*/}
+            {/*<Counter/>*/}
+            <Form/>
         </div>
     )
 }
