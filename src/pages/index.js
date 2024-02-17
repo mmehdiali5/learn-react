@@ -24,6 +24,7 @@ import Counter from "./components/queueUpdates";
 import RequestTracker from "./qcomps/shoppingCart";
 import Scoreboard from "./qcomps/updObjectsForm";
 import List from "./qcomps/artistsRemoveArr";
+import BucketList from "./qcomps/arrObj";
 //import List from "./components/artistsArr";
 //import Gallery from "./components/state";
 //import Gallery from "./components/whyState";
@@ -52,7 +53,8 @@ export default function Home() {
             {/*<Counter/>*/}
             {/*<RequestTracker/>*/}
             {/*<Scoreboard/>*/}
-            <List/>
+            {/*<List/>*/}
+            <BucketList/>
         </div>
     )
 }

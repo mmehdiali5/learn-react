@@ -9,29 +9,47 @@ const initialList = [
 
 export default function BucketList() {
   const [myList, setMyList] = useState(initialList);
-  const [yourList, setYourList] = useState(
-    initialList
-  );
+  const [yourList, setYourList] = useState(initialList);
 
-  function handleToggleMyList(artworkId, nextSeen) {
-    const tmpList = myList.map(e => {
-        if (e.id === artworkId) {
-            e.seen = nextSeen
-        }
-        return e
-    });
-    setMyList(tmpList);
-  }
+  // function handleToggleMyList(artworkId, nextSeen) {
+  //   const tmpList = myList.map(e => {
+  //       if (e.id === artworkId) {
+  //           e.seen = nextSeen
+  //       }
+  //       return e
+  //   });
+  //   setMyList(tmpList);
+  // }
+  //
+  // function handleToggleYourList(artworkId, nextSeen) {
+  //   const tmpList = yourList.map(e => {
+  //       if (e.id === artworkId) {
+  //           e.seen = nextSeen
+  //       }
+  //       return e
+  //   });
+  //   setYourList(tmpList);
+  // }
 
-  function handleToggleYourList(artworkId, nextSeen) {
-    const tmpList = yourList.map(e => {
-        if (e.id === artworkId) {
-            e.seen = nextSeen
-        }
-        return e
-    });
-    setYourList(tmpList);
-  }
+    function handleToggleMyList(artworkId, nextSeen) {
+        const updatedList = myList.map(item => {
+            if (item.id === artworkId) {
+                return { ...item, seen: nextSeen };
+            }
+            return item;
+        });
+        setMyList(updatedList);
+    }
+
+    function handleToggleYourList(artworkId, nextSeen) {
+        const updatedList = yourList.map(item => {
+            if (item.id === artworkId) {
+                return { ...item, seen: nextSeen };
+            }
+            return item;
+        });
+        setYourList(updatedList);
+    }
 
   return (
     <>
