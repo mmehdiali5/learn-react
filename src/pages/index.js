@@ -12,7 +12,7 @@ import Profile from './components/profile_props.js'
 import Holder from "./components/square";
 //import PackingList from "./components/props_item";
 import PackingList from "./qcomps/props_item";
-import List from "./qcomps/list_keys_id";
+//import List from "./qcomps/list_keys_id";
 import RecipeList from "./qcomps/recipes";
 import Gallery from "./qcomps/state";
 import PersonData from "./components/stateObj";
@@ -23,6 +23,8 @@ import Form from "./components/snapshot2";
 import Counter from "./components/queueUpdates";
 import RequestTracker from "./qcomps/shoppingCart";
 import Scoreboard from "./qcomps/updObjectsForm";
+import List from "./qcomps/artistsRemoveArr";
+//import List from "./components/artistsArr";
 //import Gallery from "./components/state";
 //import Gallery from "./components/whyState";
 
@@ -49,7 +51,8 @@ export default function Home() {
             {/*<Form/>*/}
             {/*<Counter/>*/}
             {/*<RequestTracker/>*/}
-            <Scoreboard/>
+            {/*<Scoreboard/>*/}
+            <List/>
         </div>
     )
 }
