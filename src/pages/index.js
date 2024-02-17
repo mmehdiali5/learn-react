@@ -18,8 +18,11 @@ import Gallery from "./qcomps/state";
 import PersonData from "./components/stateObj";
 //import Form from "./qcomps/stuckForm";
 import FeedbackForm from "./qcomps/thankYouCrash";
-import Counter from "./components/snapshot";
+//import Counter from "./components/snapshot";
 import Form from "./components/snapshot2";
+import Counter from "./components/queueUpdates";
+import RequestTracker from "./qcomps/shoppingCart";
+import Scoreboard from "./qcomps/updObjectsForm";
 //import Gallery from "./components/state";
 //import Gallery from "./components/whyState";
 
@@ -43,7 +46,10 @@ export default function Home() {
             {/*<Form/>*/}
             {/*<FeedbackForm/>*/}
             {/*<Counter/>*/}
-            <Form/>
+            {/*<Form/>*/}
+            {/*<Counter/>*/}
+            {/*<RequestTracker/>*/}
+            <Scoreboard/>
         </div>
     )
 }
