@@ -31,6 +31,7 @@ export default function BucketList() {
   //   setYourList(tmpList);
   // }
 
+//Decoupled by returning new object
     function handleToggleMyList(artworkId, nextSeen) {
         const updatedList = myList.map(item => {
             if (item.id === artworkId) {
@@ -41,6 +42,8 @@ export default function BucketList() {
         setMyList(updatedList);
     }
 
+
+//Decoupled by returning new object
     function handleToggleYourList(artworkId, nextSeen) {
         const updatedList = yourList.map(item => {
             if (item.id === artworkId) {
